@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/roboto.woff") format("woff"),
+    url("./assets/fonts/roboto.woff2") format("woff2");
+}
+
+html {
+  font-family: "roboto";
+}
