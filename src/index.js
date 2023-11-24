@@ -1,17 +1,23 @@
 import "./style.css";
-import Logo from "./assets/logo.jpeg";
+import header from "./components/header/index.js";
+import footer from "./components/footer/index.js";
+import homePage from "./pages/home.js";
+import menuPage from "./pages/menu.js";
+import contactPage from "./pages/contact.js";
 
 const body = document.querySelector("#content");
 
 function component() {
-  const element = document.createElement("div");
-  element.innerHTML = "<h1>Luca cafe</h1>";
-  console.log("pageeeee");
+  const element = document.createElement("header");
+  element.classList.add("main");
 
-  const myLogo = new Image();
-  myLogo.src = Logo;
-  element.appendChild(myLogo);
+  const container = document.createElement("div");
+  container.classList.add("container");
+
+  element.appendChild(container);
 
   return element;
 }
+body.appendChild(header());
 body.appendChild(component());
+body.appendChild(footer());

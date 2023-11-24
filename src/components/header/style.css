@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  background-color: white;
+  padding: 1.5vh 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 18px 0px #ececec;
+}
+
+.container {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+}
+
+.title {
+  color: var(--main-color);
+  margin: 0;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-family: "sodosans-semibold";
+  font-size: 1em;
+}

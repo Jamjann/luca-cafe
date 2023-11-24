@@ -1,9 +1,34 @@
 @font-face {
-  font-family: "roboto";
-  src: url("./assets/fonts/roboto.woff") format("woff"),
-    url("./assets/fonts/roboto.woff2") format("woff2");
+  font-family: "sodosans";
+  src: url("./assets/fonts/sodosans.woff") format("woff"),
+    url("./assets/fonts/sodosans.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "sodosans-semibold";
+  src: url("./assets/fonts/sodosans-semibold.woff") format("woff"),
+    url("./assets/fonts/sodosans-semibold.woff2") format("woff2");
+  font-weight: bold;
 }
 
-html {
-  font-family: "roboto";
+:root {
+  --main-color: #111;
+  --bg-color: #333;
+}
+
+html,
+body {
+  font-family: "sodosans";
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  color: var(--main-color);
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 5fr auto;
 }

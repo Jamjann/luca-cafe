@@ -1,0 +1,15 @@
+.navigator {
+  display: flex;
+}
+
+button {
+  font-family: "sodosans";
+  appearance: none;
+  background: none;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin-left: 1vw;
+}
