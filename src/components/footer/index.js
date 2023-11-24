@@ -7,6 +7,11 @@ function component() {
   const container = document.createElement("div");
   container.classList.add("container");
 
+  const license = document.createElement("h4");
+  license.classList.add("license");
+  license.textContent = "Luca de Schnauzer co.";
+  container.appendChild(license);
+
   element.appendChild(container);
 
   return element;

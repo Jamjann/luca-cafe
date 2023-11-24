@@ -2,7 +2,7 @@
   display: flex;
 }
 
-button {
+.navigator button {
   font-family: "sodosans";
   appearance: none;
   background: none;
