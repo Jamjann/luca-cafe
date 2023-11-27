@@ -18,7 +18,7 @@ const brand = () => {
   return block;
 };
 
-function component() {
+function component(pages) {
   const element = document.createElement("header");
   element.classList.add("header");
 
@@ -26,7 +26,7 @@ function component() {
   container.classList.add("container");
 
   container.appendChild(brand());
-  container.appendChild(navigator());
+  container.appendChild(navigator(pages));
 
   element.appendChild(container);
 

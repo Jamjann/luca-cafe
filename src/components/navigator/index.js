@@ -1,17 +1,17 @@
 import "./style.css";
 
-const list = ["Home", "Menu", "Contact"];
-function component() {
+function component(pages) {
   const element = document.createElement("div");
   element.classList.add("navigator");
 
-  list.forEach((i) => {
+  for (let i in pages) {
     const item = document.createElement("button");
     item.classList.add("item");
-    item.textContent = i;
+    item.setAttribute("data-id", i);
+    item.textContent = pages[i].title;
 
     element.appendChild(item);
-  });
+  }
 
   return element;
 }

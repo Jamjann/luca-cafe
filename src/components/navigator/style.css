@@ -12,4 +12,8 @@
   color: var(--main-color);
   text-transform: uppercase;
   margin-left: 1vw;
+  cursor: pointer;
+}
+.navigator button.active {
+  color: var(--yellow);
 }

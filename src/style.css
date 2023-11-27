@@ -14,6 +14,7 @@
 :root {
   --main-color: #111;
   --bg-color: #333;
+  --yellow: #ffa200;
 }
 
 html,
@@ -31,4 +32,15 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: auto 5fr auto;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .container h1 {
+  font-family: "sodosans-semibold";
+  font-size: 10em;
+  text-transform: uppercase;
 }
